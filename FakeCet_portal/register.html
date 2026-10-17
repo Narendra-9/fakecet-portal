@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeCet</title>
+    <link rel="icon" type="image/x-icon" href="./Css/Assets/fakecet_logog.png"> 
+    <link rel="stylesheet" href="./Css/style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/style2.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./Css/Assets/fakecet_logog.png" alt="" height="80px" class="logoimg">
+        </div>
+        <div class="heading">
+            <div class="headingcontent">
+                <p class="fakecet">FAKECET - 2024</p>
+                <p class="para">Engineering College Common Entrance Portal</p>
+                <p class="para">(Maintained by Fakify on behalf of FSCHE)</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="navbar-section">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 0;">
+            <div class="container-fluid" style="background-color: rgba(20, 66, 99, 0.936);">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item me-5">
+                    <a class="nav-link" aria-current="page" href="./applycolleges.html">Home</a>
+                  </li>
+      
+                  <li class="nav-item me-5">
+                    <a class="nav-link " aria-disabled="true" href="#">Important Dates</a>
+                  </li>
+              
+                  <li class="nav-item me-5">
+                    <a class="nav-link " aria-disabled="true" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link " aria-disabled="true" href="./Home.html">Log out</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <!-- <marquee width="100%" direction="left" scrollamount="12">
+        <img src="https://cets.apsche.ap.gov.in/EAPCET/images/NewGIF.gif" alt="">The candidates who are qualified in FAKECET and passed in Intermediate or equivalent examination have to fill the weboptions preferences on or before 17-Oct-2024 11:59 PM.
+        </marquee> -->
+
+        <section class="getresultform container mt-4">
+          <div class="row formheading">
+              <p style="font-size: 20px;">Registration Form for FAKECET - 2024 Counsling</p>
+          </div>
+          <form class=" mt-2 appform">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="label1 mb-1">
+                            <label for="rnumber">Candidate name as per 10th certificate <span>*</span></label>
+                        </div>
+                        <input class="field" type="text" name="Registrationnumber" id="rnumber" placeholder="Enter Candidate Name" value="VIJAY DEVARAKONDA" requiredd>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="label2 mb-1">
+                            <label for="fatherName">Father's Name<span>*</span></label>
+                        </div>
+                        <input class="field" type="text" name="fatherName" id="fatherName" placeholder="Enter Father's Name" value="PRASAD DEVARAKONDA" sequired>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="label2 mb-1">
+                            <label for="fatherOccupation">Father's Occupation<span>*</span></label>
+                        </div>
+                        <input class="field" type="text" name="fatherOccupation" id="fatherOccupation" placeholder="Enter Father's Occupation" value="GOVERNMENT TEACHER" requiredd>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="label2 mb-1">
+                            <label for="motherName">Mother's Name <span>*</span></label>
+                        </div>
+                        <input class="field" type="text" name="motherName" id="motherName" placeholder="Enter Mother's Name" requiredd value="ANITHA DEVARAKONDA">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="label2 mb-1">
+                            <label for="motherOccupation">Mother's Occupation<span>*</span></label>
+                        </div>
+                        <input class="field" type="text" name="motherOccupation" id="motherOccupation" placeholder="Enter Mother's Occupation" requiredd value="HOME MAKER">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="label2 mb-1">
+                            <label for="email">Email Id<span>*</span></label>
+                        </div>
+                        <input class="field" type="email" name="email" id="email" placeholder="Enter Email ID" requiredd value="vijaydevarakonda@gmail.com">
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="label2 mb-1">
+                            <label for="gender">Gender<span>*</span></label>
+                        </div>
+                        <select name="gender" id="gender" style="width: 100%; height: 33px; padding-left: 5px;">
+                          <option value="" disabled >Select Gender</option>
+                          <option value="Male" selected>Male</option>
+                          <option value="Female" >Female</option>
+                          <option value="others" >Others</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="label2 mb-1">
+                            <label for="dob">Date of Birth<span>*</span></label>
+                        </div>
+                        <input class="field" type="date" name="dob" id="dob" placeholder="Enter Date of Birth" requiredd value="2000-09-09">
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="label2 mb-1">
+                            <label for="bloodGroup">Blood Group <span>*</span></label>
+                        </div>
+                        <input class="field" type="text" name="bloodGroup" id="bloodGroup" placeholder="Enter Blood Group" requiredd value="AB+">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="label2 mb-1">
+                            <label for="aadhar">Aadhar No. <span>*</span></label>
+                        </div>
+                        <input class="field" type="number" name="aadhar" id="aadhar" placeholder="Enter Aadhar Number" requiredd value="609888235612">
+                        <p style="color: rgb(194, 58, 58); font-weight: 500; display: none;" class="aadharnumberfeedback">AadharNumber should be of length 12</p>
+                      </div>
+                    <div class="col-lg-3">
+                        <div class="label2 mb-1">
+                            <label for="state">State<span>*</span></label>
+                        </div>
+                        <input class="field" type="text" name="state" id="state" placeholder="Enter State" requiredd value="ANDHRA PRADESH">
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="label2 mb-1">
+                            <label for="city">City <span>*</span></label>
+                        </div>
+                        <input class="field" type="text" name="city" id="city" placeholder="Enter City" requiredd value="KAKINADA">
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="label2 mb-1">
+                            <label for="zip">Zip <span>*</span></label>
+                        </div>
+                        <input class="field" type="number" name="zip" id="zip" placeholder="Enter Zip Code" requireddd value="533003">
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="label2 mb-1">
+                            <label for="caste">Caste <span>*</span></label>
+                        </div>
+
+                        <select name="caste" id="caste" style="width: 100%; height: 33px; padding-left: 5px;">
+                            <option value="">Select Caste</option>
+                            <option value="Male" selected>General</option>
+                            <option value="Female" >Ews</option>
+                            <option value="OBC" >OBC</option>
+                            <option value="SC" >SC</option>
+                            <option value="ST" >ST</option>
+
+                          </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="label2 mb-1">
+                            <label for="pwd">Person with disability ?<span>*</span></label>
+                        </div>
+                        <select name="pwd" id="pwd" style="width: 100%; height: 33px; padding-left: 5px;">
+                          <option value="yes">Yes</option>
+                          <option value="no" selected>No</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="label2 mb-1">
+                            <label for="hallticket12">12th Hallticket number<span>*</span></label>
+                        </div>
+                        <input class="field" type="number" name="hallticket12" id="lhallticketnum" placeholder="Enter 12th Hallticket Number" value="18131186431" >
+                        <p style="color: rgb(194, 58, 58); font-weight: 500; display: none;" class="hallticketfeedback">Hallticketnumber should be of length 11</p>
+                      </div>
+                    <div class="col-lg-3">
+                        <div class="label2 mb-1">
+                            <label for="cgpa12">12th CGPA <span>*</span></label>
+                        </div>
+                        <input class="field" type="number" name="cgpa12" id="cgpa12" placeholder="Enter 12th CGPA" requireddd value="9.75">
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="label2 mb-1">
+                            <label for="percentage12">12th Percentage<span>*</span></label>
+                        </div>
+                        <input class="field" type="number" name="percentage12" id="percentage12" placeholder="Enter 12th Percentage" requireddd value="95">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="label2 mb-1">
+                            <label for="hallticket10">10th Hallticket number<span>*</span></label>
+                        </div>
+                        <input class="field" type="number" name="hallticket10" id="hallticket10" placeholder="Enter 10th Hallticket Number" requireddd value="17825637182">
+                        <p style="color: rgb(194, 58, 58); font-weight: 500; display: none;" class="hallticket10feedback">Hallticketnumber should be of length 11</p>
+      
+                      </div>
+                    <div class="col-lg-3">
+                        <div class="label2 mb-1">
+                            <label for="cgpa10">10th CGPA<span>*</span></label>
+                        </div>
+                        <input class="field" type="number" name="cgpa10" id="cgpa10" placeholder="Enter 10th CGPA" requireddd value="9.8">
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="label2 mb-1">
+                            <label for="percentage10">10th Percentage<span>*</span></label>
+                        </div>
+                        <input class="field" type="number" name="percentage10" id="percentage10" placeholder="Enter 10th Percentage" requireddd value="92">
+                    </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-lg-4">
+                  <div class="label2 mb-1">
+                    <label for="percentage10">Do you want to edit the fields?</label>
+                </div>
+                  <select name="" id="editoption" style="width: 100%; height: 30px; padding-left: 5px;">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row justify-content-start mt-3 mb-4">
+                  <div class="col-lg-2 mb-3">
+                      <button class="btn btn-primary" type="submit">Submit</button>
+                  </div>
+              </div>
+          </form>
+      </section>
+
+      <footer style="width: 100%; background: linear-gradient(to left,rgb(49, 105, 139),rgba(2, 28, 55, 0.961));">
+        <div class="row justify-content-between" style="color: white;">
+          <div class="col-lg-4">
+            <p class="p-2">All Copy rights Reserved with Fakify.</p>
+          </div>
+          <div class="col-lg-4">
+            <p class="p-2" style="text-align: end;" >Designed & Developed by Narendra Vanapalli</p>
+          </div>
+        </div>
+      </footer>
+
+
+    <script src="./JavaScript/register.js"></script>
+    <!-- <script src="./JavaScript/script1.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

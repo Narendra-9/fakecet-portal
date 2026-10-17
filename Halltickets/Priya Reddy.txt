@@ -1,0 +1,4 @@
+Hallticket numer : FC123457
+Candiddate Name : Priya Reddy
+Exam Centre : SRKR College
+Exam Date : 2024-10-05

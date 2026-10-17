@@ -1,0 +1,4 @@
+Hallticket numer : FC123462
+Candiddate Name : Sneha
+Exam Centre : ION Digital,Achuthapuram
+Exam Date : 2024-10-05

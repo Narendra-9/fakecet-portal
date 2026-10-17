@@ -1,0 +1,4 @@
+Hallticket numer : FC123464
+Candiddate Name : Pooja
+Exam Centre : Rajeev Gandhi,ION Digital zone Luthergiri
+Exam Date : 2024-10-05

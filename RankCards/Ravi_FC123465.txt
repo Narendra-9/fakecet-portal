@@ -1,0 +1,6 @@
+Name : Ravi
+MathsMark : 70
+PhysicsMark : 29
+ChemistryMark : 20
+TotalMark : 119
+Rank :3

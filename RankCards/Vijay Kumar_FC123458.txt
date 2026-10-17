@@ -1,0 +1,6 @@
+Name : Vijay Kumar
+MathsMark : 7
+PhysicsMark : 2
+ChemistryMark : 8
+TotalMark : 17
+Rank :10

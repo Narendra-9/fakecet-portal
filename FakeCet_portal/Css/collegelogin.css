@@ -1,0 +1,85 @@
+
+.login-containerr{
+    display: flex;
+    flex-direction: column;
+    /* height: 45vh; */
+    justify-content: center;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.386);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    display: none;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    /* height: 45vh; */
+    justify-content: space-evenly;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.386);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+
+}
+.register-container{
+    display: flex;
+    flex-direction: column;
+    /* height: 45vh; */
+    justify-content: space-evenly;
+    width: 30%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.386);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+
+}
+body{
+    background-image: url(./Assets/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.newheading{
+    justify-content: space-between;
+    align-items: center;
+}
+.logins{
+    display: flex;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration:underline;
+}
+.register{
+    color: white;
+}
+.register:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.loginnavigate{
+    color: white;
+}
+.loginnavigate:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

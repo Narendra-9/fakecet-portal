@@ -1,0 +1,6 @@
+Name : Karthik
+MathsMark : 56
+PhysicsMark : 38
+ChemistryMark : 22
+TotalMark : 116
+Rank :5

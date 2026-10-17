@@ -1,0 +1,6 @@
+Name : Priya Reddy
+MathsMark : 74
+PhysicsMark : 20
+ChemistryMark : 39
+TotalMark : 133
+Rank :1

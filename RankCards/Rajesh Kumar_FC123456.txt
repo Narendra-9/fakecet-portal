@@ -1,0 +1,6 @@
+Name : Rajesh Kumar
+MathsMark : 48
+PhysicsMark : 37
+ChemistryMark : 27
+TotalMark : 112
+Rank :6

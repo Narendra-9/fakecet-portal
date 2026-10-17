@@ -1,0 +1,4 @@
+Hallticket numer : FC123456
+Candiddate Name : Rajesh Kumar
+Exam Centre : ION Digital,Achuthapuram
+Exam Date : 2024-10-05

@@ -1,0 +1,6 @@
+Name : Pooja
+MathsMark : 21
+PhysicsMark : 10
+ChemistryMark : 9
+TotalMark : 40
+Rank :8

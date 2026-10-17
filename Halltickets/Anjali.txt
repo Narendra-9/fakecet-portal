@@ -1,0 +1,4 @@
+Hallticket numer : FC123459
+Candiddate Name : Anjali
+Exam Centre : ION Digital,Achuthapuram
+Exam Date : 2024-10-05

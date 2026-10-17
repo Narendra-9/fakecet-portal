@@ -1,0 +1,4 @@
+Hallticket numer : FC123463
+Candiddate Name : Ajay
+Exam Centre : SRKR College
+Exam Date : 2024-10-05

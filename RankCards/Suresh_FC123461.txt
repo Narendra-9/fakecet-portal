@@ -1,0 +1,6 @@
+Name : Suresh
+MathsMark : 62
+PhysicsMark : 33
+ChemistryMark : 26
+TotalMark : 121
+Rank :2

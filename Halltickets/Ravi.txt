@@ -1,0 +1,4 @@
+Hallticket numer : FC123465
+Candiddate Name : Ravi
+Exam Centre : ION Digital,Achuthapuram
+Exam Date : 2024-10-05

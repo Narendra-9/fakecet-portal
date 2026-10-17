@@ -1,0 +1,12 @@
+document.querySelector(".register").addEventListener('click',()=>{
+    window.location.href="./register.html";
+});
+document.querySelector(".payment").addEventListener('click',()=>{
+    window.location.href="./payment.html";
+})
+document.querySelector(".weboptions").addEventListener('click',()=>{
+    window.location.href="./weboptions.html"
+})
+document.querySelector(".uploadcertificates").addEventListener('click',()=>{
+    window.location.href="./uploadcertificates.html";
+})

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light" style="background: linear-gradient(to left,rgb(49, 105, 139),rgba(2, 28, 55, 0.961));"> 
+            <div class="container-fluid header">
+              <a class="navbar-brand" href="#" style=" color: white;">Mock Test</a>
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>     
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="quiz.html">Attempt Qs</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Add Qs</a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+          </nav>
+        </header>
+        <section>
+                <div class="quiz d-flex align-items-center justify-content-center" style=" height: 88vh; color: white;">
+                    <div style=" width: 60%;">
+                        <div class="row mb-3">
+                          <div class="col">
+                           <h4 class="mquestion">Question</h4>
+                          </div>
+                        </div>
+                        <div class="row mb-2">
+                          <div class="col">
+                            <input type="radio" name="option" id="optq1" value="1">
+                            <label for="opt1" id="opt1" class="opt">Option 1</label>
+                          </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col">
+                            <input type="radio" name="option" id="optq2" value="2">
+                            <label for="opt1" id="opt2" class="opt">Option 2</label>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col">
+                            <input type="radio" name="option" id="optq3" value="3">
+                            <label for="opt1" id="opt3" class="opt">Option 3</label>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col">
+                            <input type="radio" name="option" id="optq4" value="4">
+                            <label for="opt1" id="opt4" class="opt">Option 4</label>
+                            </div>
+                          </div>
+                        <div class="w-100 text-end mt-4">
+                            <button class="restart">restart</button>
+                            <button class="next nextbtn">next</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="blur-effect"></section>
+        <section class="start-btn">
+          <button class="btn btn-success" style="width: 100px; font-size: 20px;">Start</button>
+        </section>
+        <section id="timer-section">
+          <p id="timer"></p>
+        </section>
+        <script>
+
+
+          
+         
+            questions={
+              1:"A ball is thrown vertically upwards with a speed of 20 m/s. What is the maximum height it reaches?,10 m,20 m,30 m,40 m,2",
+              2:"What is the unit of electric current?,Volt,Ohm,Ampere,Joule,3",
+              3:"Which of the following is an alkaline earth metal?,Sodium,Magnesium,Aluminum,Iron,2",
+              4:"What is the pH of pure water at 25°C?,0,7,14,10,2",
+              5:"The area of a circle is given by the formula  𝐴 = 𝜋 𝑟 2  . What is the area of a circle with a radius of 3 cm?, 9π cm²,6π cm²,3π cm²,12π cm²,1",
+              6:"If  𝑓 ( 𝑥 ) = 2 𝑥 2 + 3 𝑥 − 5 . what is  𝑓 ( 2 ) ?,3,7,9,11,4"
+            }
+            let cnt=1
+            let crt=0
+            let nbtn=document.querySelector(".nextbtn")
+            let restartq=document.querySelector(".restart")
+            restartq.addEventListener('click',restart)
+            nbtn.addEventListener('click',nextquestion)
+            let objs=questions[cnt].split(',');
+            let labels=['opt1','opt2','opt3','opt4'];
+            let question=document.querySelector(".mquestion");
+            question.innerText=objs[0]; 
+            for(let i=0;i<4;i++){
+              let label = document.getElementById(labels[i]);
+              label.innerText = objs[i + 1];
+            }
+            cnt++;
+            function restart(){
+              window.location.href='./quiz.html'
+            }
+            function nextquestion(){
+              if(cnt<=localStorage.length-1){
+                let selectedRadio = document.querySelector('input[name="option"]:checked');
+                let objs=questions[cnt-1].split(',');
+                console.log(selectedRadio)
+                if (selectedRadio.value === objs[objs.length - 1]) {
+                  crt += 1;
+                  console.log("Correct Answers:", crt);
+                }
+                selectedRadio.checked=false;
+                objs=questions[cnt].split(',');
+                let labels=['opt1','opt2','opt3','opt4'];
+                let question=document.querySelector(".mquestion");
+                question.innerText=objs[0]; 
+                for(let i=0;i<4;i++){
+                  let label = document.getElementById(labels[i]);
+                  label.innerText = objs[i + 1];
+                }
+                cnt += 1;
+                if(cnt==questions.length){
+                  document.querySelector('.next').innerText='Submit';
+
+                }
+              }
+              else{
+                let selectedRadio = document.querySelector('input[name="option"]:checked');
+                let objs=questions[cnt-1].split(',');
+                console.log(selectedRadio)
+                if (selectedRadio.value === objs[objs.length - 1]) {
+                  crt += 1;
+                  console.log("Correct Answers:", crt);
+                }
+                selectedRadio.checked=false;
+                alert(`You reached end,your Score is ${crt}`)
+
+                // Removing event 
+                nbtn.removeEventListener('click',nextquestion)
+                console.log('removed the event listener!')
+                document.querySelector('.restart').style.display='inline-block'
+                
+                crt=0;
+
+              }
+            }
+            
+
+        document.querySelector(".start-btn").addEventListener('click',()=>{
+            document.querySelector(".blur-effect").style.display="none";
+            document.querySelector(".start-btn").style.display="none";
+          let countdownTime = 60; 
+
+        const timerElement = document.getElementById('timer');
+
+        const countdown = setInterval(() => {
+            const minutes = Math.floor(countdownTime / 60);
+            const seconds = countdownTime % 60;
+
+   
+            const formattedTime = (minutes < 10 ? '0' + minutes : minutes) + ':' + 
+                                  (seconds < 10 ? '0' + seconds : seconds);
+            timerElement.innerText = formattedTime;
+
+   
+            countdownTime--;
+            if(countdownTime<10){
+              timerElement.style.color="red";
+
+            }
+            if (countdownTime < 0) {
+                clearInterval(countdown);
+                timerElement.innerText = "Time's up!";
+                alert(`Times up !,your Score is ${crt}`)
+
+                // Removing event 
+                nbtn.removeEventListener('click',nextquestion)
+                console.log('removed the event listener!')
+                document.querySelector('.restart').style.display='inline-block'
+                
+                crt=0;
+            }
+        }, 1000);
+        })
+        
+      
+        </script>
+</body>
+</html>

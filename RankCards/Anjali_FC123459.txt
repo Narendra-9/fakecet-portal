@@ -1,0 +1,6 @@
+Name : Anjali
+MathsMark : 38
+PhysicsMark : 11
+ChemistryMark : 7
+TotalMark : 56
+Rank :7

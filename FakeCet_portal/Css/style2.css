@@ -1,0 +1,31 @@
+.getresultform{
+   background-color: rgba(155, 178, 202, 0.961);
+
+    /* height: 28vh; */
+    border-radius: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+     margin: 0; 
+}
+
+.formheading{
+    background-color: rgba(20, 66, 99, 0.936);
+    color: white;
+    /* height: 0px; */
+    padding: 5px;
+}
+.result-content{
+    width: 50%;
+    margin: auto;
+    display: none;
+}   
+.field{
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 3px; 
+    font-size: 15px; 
+    padding-left: 10px;
+}

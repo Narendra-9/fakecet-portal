@@ -1,0 +1,4 @@
+Hallticket numer : FC123460
+Candiddate Name : Karthik
+Exam Centre : SRKR College
+Exam Date : 2024-10-05

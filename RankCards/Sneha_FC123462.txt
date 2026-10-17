@@ -1,0 +1,6 @@
+Name : Sneha
+MathsMark : 56
+PhysicsMark : 28
+ChemistryMark : 35
+TotalMark : 119
+Rank :4

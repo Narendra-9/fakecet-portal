@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeCet</title>
+    <link rel="icon" type="image/x-icon" href="./Css/Assets/fakecet_logog.png"> 
+    <link rel="stylesheet" href="./Css/style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Css/apply.css">
+    <link rel="stylesheet" href="./Css/style2.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./Css/Assets/fakecet_logog.png" alt="" height="80px" class="logoimg">
+        </div>
+        <div class="heading">
+            <div class="headingcontent">
+                <p class="fakecet">FAKECET - 2024</p>
+                <p class="para">Engineering College Common Entrance Portal</p>
+                <p class="para">(Maintained by Fakify on behalf of FSCHE)</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="navbar-section">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 0;">
+          <div class="container-fluid" style="background-color: rgba(20, 66, 99, 0.936);">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item me-5">
+                  <a class="nav-link" aria-current="page" href="./Home.html">Home</a>
+                </li>
+                <li class="nav-item me-5">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                
+                <li class="nav-item dropdown me-5">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Syllabus
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://cets.apsche.ap.gov.in/EAPCET/PDF/APEAPCET2024_Syllabus_Engineering.pdf" style="color: black;">Engineering Stream</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item me-5">
+                  <a class="nav-link " aria-disabled="true" href="#">Important Dates</a>
+                </li>
+                
+                <li class="nav-item me-5">
+                  <a class="nav-link " aria-disabled="true" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </section>
+    <!-- <marquee width="100%" direction="left" scrollamount="12">
+        <img src="https://cets.apsche.ap.gov.in/EAPCET/images/NewGIF.gif" alt="">The candidates who are qualified in FAKECET and passed in Intermediate or equivalent examination have to fill the weboptions preferences on or before 17-Oct-2024 11:59 PM.
+        </marquee> -->
+
+    <!-- <section class="container mt-4 application-section" style="color: white;">
+        <h2 class="text-center">APPLICATION FORM FOR FAKECET - 2025</h2>
+        <form class="row g-3 appform">
+            <div class="col-md-12">
+              <label for="validationCustom01" class="form-label">Candidate name as per 10th certificate</label>
+              <input type="text" class="form-control" id="name" requireddd>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label">Father's Name</label>
+              <input type="text" class="form-control" id="fathername"  requiredd>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Mother's Name</label>
+                <input type="text" class="form-control" id="mothername"  requiredd>
+              </div>
+            <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Email Id </label>
+                <input type="email" class="form-control" id="emailid" requiredd>
+              </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">Gender</label>
+                <select class="form-select" id="validationCustom04" requiredd>
+                  <option selected disabled value="">Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+            <div class="col-md-3">
+                <label for="validationCustom02" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="validationCustom02" requiredd>
+              </div>
+            <div class="col-md-3">
+                <label for="validationCustom02" class="form-label">Blood Group</label>
+                <input type="text" class="form-control" id="validationCustom02" requiredd>
+              </div>
+            <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Aadhar No.</label>
+                <input type="number" class="form-control" id="validationCustom02" requiredd>
+              </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">State</label>
+                <select class="form-select" id="validationCustom04" requiredd>
+                  <option selected disabled value="">Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+            <div class="col-md-3">
+              <label for="validationCustom03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationCustom03" requiredd>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="validationCustom05" requiredd>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom02" class="form-label">Caste</label>
+                <input type="text" class="form-control" id="validationCustom02" requiredd>
+              </div>
+            <div class="col-md-3">
+                <label for="validationCustom02" class="form-label">Upload caste certificate :</label>
+                <input type="file" class="form-control" id="validationCustom02" requiredd>
+              </div>
+            <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Latest qualifying exam</label>
+                <input type="number" class="form-control" id="validationCustom02" requiredd>
+              </div>
+            <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Latest qualifying exam hallticket number </label>
+                <input type="number" class="form-control" id="lhallticketnum" requireddd>
+              </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Upload AadharCard :</label>
+                <input type="file" class="form-control" id="validationCustom02" requiredd>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Upload 10th marksheet :</label>
+                <input type="file" class="form-control" id="validationCustom02" requiredd>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Upload 12th marksheet :</label>
+                <input type="file" class="form-control" id="validationCustom02" requiredd>
+              </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" requiredd>
+                <label class="form-check-label">
+                  Agree to terms and conditions
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+                <p style="color: rgb(255, 90, 90);">Fee amount : Rs.500</p>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Proceed to payment</button>
+            </div>
+          </form>
+    </section> -->
+    <section class="getresultform container mt-4">
+      <div class="row formheading">
+          <p style="font-size: 20px;">Application Form for FAKECET - 2024</p>
+      </div>
+      <div class="row mt-2 status" style="color: rgb(19, 150, 19);">
+       
+      </div>
+      <form class=" mt-2 appform">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="label1 mb-1">
+                      <label for="rnumber">Candidate name as per 10th certificate <span>*</span></label>
+                  </div>
+                  <input class="field" type="text" name="Registrationnumber" id="rnumber" placeholder="Enter Candidate Name" requiredd>
+              </div>
+              <div class="col-lg-6">
+                  <div class="label2 mb-1">
+                      <label for="fatherName">Father's Name<span>*</span></label>
+                  </div>
+                  <input class="field" type="text" name="fatherName" id="fatherName" placeholder="Enter Father's Name" sequired>
+              </div>
+              <div class="col-lg-6">
+                  <div class="label2 mb-1">
+                      <label for="fatherOccupation">Father's Occupation<span>*</span></label>
+                  </div>
+                  <input class="field" type="text" name="fatherOccupation" id="fatherOccupation" placeholder="Enter Father's Occupation" requiredd>
+              </div>
+              <div class="col-lg-6">
+                  <div class="label2 mb-1">
+                      <label for="motherName">Mother's Name <span>*</span></label>
+                  </div>
+                  <input class="field" type="text" name="motherName" id="motherName" placeholder="Enter Mother's Name" requiredd>
+              </div>
+              <div class="col-lg-6">
+                  <div class="label2 mb-1">
+                      <label for="motherOccupation">Mother's Occupation<span>*</span></label>
+                  </div>
+                  <input class="field" type="text" name="motherOccupation" id="motherOccupation" placeholder="Enter Mother's Occupation" requiredd>
+              </div>
+              <div class="col-lg-6">
+                  <div class="label2 mb-1">
+                      <label for="email">Email Id<span>*</span></label>
+                  </div>
+                  <input class="field" type="email" name="email" id="email" placeholder="Enter Email ID" requiredd>
+              </div>
+              <div class="col-lg-3">
+                  <div class="label2 mb-1">
+                      <label for="gender">Gender<span>*</span></label>
+                  </div>
+                  <select name="gender" id="gender" style="width: 100%; height: 33px; padding-left: 5px;">
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female" >Female</option>
+                    <option value="others" >Others</option>
+                  </select>
+              </div>
+              <div class="col-lg-3">
+                  <div class="label2 mb-1">
+                      <label for="dob">Date of Birth<span>*</span></label>
+                  </div>
+                  <input class="field" type="date" name="dob" id="dob" placeholder="Enter Date of Birth" requiredd>
+              </div>
+              <div class="col-lg-3">
+                  <div class="label2 mb-1">
+                      <label for="bloodGroup">Blood Group <span>*</span></label>
+                  </div>
+                  <input class="field" type="text" name="bloodGroup" id="bloodGroup" placeholder="Enter Blood Group" requiredd>
+              </div>
+              <div class="col-lg-6">
+                  <div class="label2 mb-1">
+                      <label for="aadhar">Aadhar No. <span>*</span></label>
+                  </div>
+                  <input class="field" type="number" name="aadhar" id="aadhar" placeholder="Enter Aadhar Number" requiredd>
+                  <p style="color: rgb(194, 58, 58); font-weight: 500; display: none;" class="aadharnumberfeedback">AadharNumber should be of length 12</p>
+                </div>
+              <div class="col-lg-3">
+                  <div class="label2 mb-1">
+                      <label for="state">State<span>*</span></label>
+                  </div>
+                  <input class="field" type="text" name="state" id="state" placeholder="Enter State" requiredd>
+              </div>
+              <div class="col-lg-3">
+                  <div class="label2 mb-1">
+                      <label for="city">City <span>*</span></label>
+                  </div>
+                  <input class="field" type="text" name="city" id="city" placeholder="Enter City" requiredd>
+              </div>
+              <div class="col-lg-3">
+                  <div class="label2 mb-1">
+                      <label for="zip">Zip <span>*</span></label>
+                  </div>
+                  <input class="field" type="number" name="zip" id="zip" placeholder="Enter Zip Code" requireddd>
+              </div>
+              <div class="col-lg-3">
+                  <div class="label2 mb-1">
+                      <label for="caste">Caste <span>*</span></label>
+                  </div>
+                  <input class="field" type="text" name="caste" id="caste" placeholder="Enter Caste" requireddd>
+              </div>
+              <div class="col-lg-3">
+                  <div class="label2 mb-1">
+                      <label for="pwd">Person with disability ?<span>*</span></label>
+                  </div>
+                  <select name="pwd" id="pwd" style="width: 100%; height: 33px; padding-left: 5px;">
+                    <option value="yes">Yes</option>
+                    <option value="no" selected>No</option>
+                  </select>
+              </div>
+              <div class="col-lg-6">
+                  <div class="label2 mb-1">
+                      <label for="hallticket12">12th Hallticket number<span>*</span></label>
+                  </div>
+                  <input class="field" type="number" name="hallticket12" id="lhallticketnum" placeholder="Enter 12th Hallticket Number" >
+                  <p style="color: rgb(194, 58, 58); font-weight: 500; display: none;" class="hallticketfeedback">Hallticketnumber should be of length 11</p>
+                </div>
+              <div class="col-lg-3">
+                  <div class="label2 mb-1">
+                      <label for="cgpa12">12th CGPA <span>*</span></label>
+                  </div>
+                  <input class="field" type="number" name="cgpa12" id="cgpa12" placeholder="Enter 12th CGPA" requireddd>
+              </div>
+              <div class="col-lg-3">
+                  <div class="label2 mb-1">
+                      <label for="percentage12">12th Percentage<span>*</span></label>
+                  </div>
+                  <input class="field" type="number" name="percentage12" id="percentage12" placeholder="Enter 12th Percentage" requireddd>
+              </div>
+              <div class="col-lg-6">
+                  <div class="label2 mb-1">
+                      <label for="hallticket10">10th Hallticket number<span>*</span></label>
+                  </div>
+                  <input class="field" type="number" name="hallticket10" id="hallticket10" placeholder="Enter 10th Hallticket Number" requireddd>
+                  <p style="color: rgb(194, 58, 58); font-weight: 500; display: none;" class="hallticket10feedback">Hallticketnumber should be of length 11</p>
+
+                </div>
+              <div class="col-lg-3">
+                  <div class="label2 mb-1">
+                      <label for="cgpa10">10th CGPA<span>*</span></label>
+                  </div>
+                  <input class="field" type="number" name="cgpa10" id="cgpa10" placeholder="Enter 10th CGPA" requireddd>
+              </div>
+              <div class="col-lg-3">
+                  <div class="label2 mb-1">
+                      <label for="percentage10">10th Percentage<span>*</span></label>
+                  </div>
+                  <input class="field" type="number" name="percentage10" id="percentage10" placeholder="Enter 10th Percentage" requireddd>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col mt-3">
+                  <input type="checkbox" id="terms" name="terms" value="agree">
+                  <label for="terms"> Agree to terms and conditions</label><br>
+              </div>
+          </div>
+          <div class="row mt-2" style="color: rgb(144, 75, 75); font-weight: 500;">
+            <div class="col">
+              <p>
+                Fee amount : 500
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-start mt-3 mb-4">
+              <div class="col-lg-3 mb-3" >
+                  <button class="btn btn-primary submit" data-toggle="modal" data-target="#exampleModal" type="submit">Proceed to payment</button>
+              </div>
+          </div>
+      </form>
+  </section>
+  
+
+    <div class="blur-effect"></div>
+    <section class="payment-hover">
+        <div class="qr">
+            <img src="./Css/Assets/qr.png" alt="" height="200px" width="200px ">
+        </div>
+        
+        <div class="but">
+            <button class="btn btn-primary done">Done</button>
+        </div>
+        
+    </section>
+
+
+    <footer style="width: 100%; background: linear-gradient(to left,rgb(49, 105, 139),rgba(2, 28, 55, 0.961));">
+          <div class="row justify-content-between" style="color: white;">
+            <div class="col-lg-4">
+              <p class="p-2">All Copy rights Reserved with Fakify.</p>
+            </div>
+            <div class="col-lg-4">
+              <p class="p-2" style="text-align: end;" >Designed & Developed by Narendra Vanapalli</p>
+            </div>
+          </div>
+        </footer>
+    
+    <script src="./JavaScript/apply.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeCet</title>
+    <link rel="icon" type="image/x-icon" href="./Css/Assets/fakecet_logog.png"> 
+    <link rel="stylesheet" href="./Css/style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Css/style2.css">
+    <style>
+        .payment-hover{
+            height: 50%;
+            width: 250px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: white;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 10px;
+            display: none;
+        }
+        .blur-effect{
+            position:absolute;
+            top: 0%;
+            height: 140vh;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.865);
+            display: none;
+        }          
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./Css/Assets/fakecet_logog.png" alt="" height="80px" class="logoimg">
+        </div>
+        <div class="heading">
+            <div class="headingcontent">
+                <p class="fakecet">FAKECET - 2024</p>
+                <p class="para">Engineering College Common Entrance Portal</p>
+                <p class="para">(Maintained by Fakify on behalf of FSCHE)</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="navbar-section">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 0;">
+          <div class="container-fluid" style="background-color: rgba(20, 66, 99, 0.936);">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item me-5">
+                  <a class="nav-link" aria-current="page" href="./applycolleges.html">Home</a>
+                </li>
+    
+                <li class="nav-item me-5">
+                  <a class="nav-link " aria-disabled="true" href="#">Important Dates</a>
+                </li>
+            
+                <li class="nav-item me-5">
+                  <a class="nav-link " aria-disabled="true" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item me-5">
+                  <a class="nav-link " aria-disabled="true" href="./Home.html">Log out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </section>
+
+    <!-- <marquee width="100%" direction="left" scrollamount="12">
+        <img src="https://cets.apsche.ap.gov.in/EAPCET/images/NewGIF.gif" alt="">The candidates who are qualified in FAKECET and passed in Intermediate or equivalent examination have to fill the weboptions preferences on or before 17-Oct-2024 11:59 PM.
+        </marquee> -->
+
+        <!-- <section class="container mt-4 application-section" style="color: white;">
+            <h2 class="text-center">FAKECET Registration Form</h2>
+            <form class="row g-3 appform">
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">FAKECET Hallticket Number*</label>
+                  <input type="text" class="form-control" id="name" requiredd>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Aadhar Number</label>
+                  <input type="text" class="form-control" id="fathername"  requiredd>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Name of the Candidate</label>
+                    <input type="text" class="form-control" id="mothername"  requiredd>
+                  </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Mobile Number </label>
+                    <input type="number" class="form-control" id="emailid" requiredd>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Caste Category </label>
+                    <select class="form-select" id="validationCustom04" requiredd>
+                        <option selected disabled value="">Select</option>
+                        <option value="OC">OC</option>
+                        <option value="EWS">EWS</option>
+                        <option value="OBC">OBC</option>
+                        <option value="SC">SC</option>
+                        <option value="ST">ST</option>
+                      </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Person with Disability(PWD)</label>
+                    <select class="form-select" id="validationCustom04" requiredd>
+                        <option selected disabled value="">Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                  </div>
+                <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">Amount(in Rs)*</label>
+                    <input type="number" class="form-control" id="validationCustom02" requiredd>
+                  </div>
+                
+                  <div class="row-md-3">
+                    <div class="col">
+                        <div class="row">
+                            <label for="">Payment Methods*</label>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col ms-3">
+                                <input type="radio" name="payment-method" id="cd">
+                                <label for="">Credit Card</label>
+                                <br>
+                                <input type="radio" name="payment-method" id="dd">
+                                <label for="">Debit Card</label>
+                                <br>
+                                <input type="radio" name="payment-method" id="sb">
+                                <label for="">SBI Net Banking</label>
+                                <br>
+                                <input type="radio" name="payment-method" id="hd">
+                                <label for="">HDFC Net Banking</label>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                  </div>
+
+                  <div class="row mt-4 d-flex justify-content-end">
+                    <div class="col-1">
+                        <button class="btn btn-success" type="submit" style="width: 100px;">Pay</button>
+                      </div>
+                  </div>
+                
+              </form>
+        </section> -->
+
+
+
+    <section class="getresultform container mt-4">
+      <div class="row formheading">
+          <p style="font-size: 20px;">Payment Form for FAKECET - 2024 Counsling</p>
+      </div>
+      <form class=" mt-2 appform">
+          <div class="row">
+              <div class="col-lg-6">
+                  <div class="label1 mb-1">
+                      <label for="rnumber">FAKECET Hallticket Number*<span>*</span></label>
+                  </div>
+                  <input class="field" type="text" name="Registrationnumber" id="rnumber" placeholder="Enter Candidate Name" requiredd>
+              </div>
+              <div class="col-lg-3">
+                  <div class="label2 mb-1">
+                      <label for="fatherName">Rank<span>*</span></label>
+                  </div>
+                  <input class="field" type="text" name="fatherName" id="fatherName" placeholder="Enter Father's Name" sequired>
+              </div>
+              <div class="col-lg-3">
+                  <div class="label2 mb-1">
+                      <label for="fatherOccupation">Mobile Number<span>*</span></label>
+                  </div>
+                  <input class="field" type="text" name="fatherOccupation" id="fatherOccupation" placeholder="Enter Father's Occupation" requiredd>
+              </div>
+              <div class="col-lg-3">
+                  <div class="label2 mb-1">
+                      <label for="motherOccupation">Amount<span>*</span></label>
+                  </div>
+                  <input class="field" type="text" name="motherOccupation" id="motherOccupation" placeholder="Enter Mother's Occupation" requiredd>
+              </div>
+
+          </div>
+         <div class="row-md-3">
+                <div class="col">
+                    <div class="row">
+                        <label for="">Payment Methods*</label>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col ms-3">
+                            <input type="radio" name="payment-method" id="cd">
+                            <label for="">Credit Card</label>
+                            <br>
+                            <input type="radio" name="payment-method" id="dd">
+                            <label for="">Debit Card</label>
+                            <br>
+                            <input type="radio" name="payment-method" id="sb">
+                            <label for="">SBI Net Banking</label>
+                            <br>
+                            <input type="radio" name="payment-method" id="hd">
+                            <label for="">HDFC Net Banking</label>
+                        </div>
+                        
+                    </div>
+
+                </div>
+              </div>
+              <div class="row justify-content-end mt-3 mb-4">
+              <div class="col-lg-1 mb-3">
+                  <button class="btn btn-primary" type="submit">Pay</button>
+              </div>
+          </div>
+      </form>
+  </section>
+
+
+  <div class="blur-effect"></div>
+    <section class="payment-hover">
+        <div class="qr">
+            <img src="./Css/Assets/qr.png" alt="" height="200px" width="200px ">
+        </div>
+        
+        <div class="but">
+            <button class="btn btn-primary done">Done</button>
+        </div>
+        
+    </section>
+
+
+    <footer style="margin-top: 90px; width: 100%; background: linear-gradient(to left,rgb(49, 105, 139),rgba(2, 28, 55, 0.961));">
+      <div class="row justify-content-between" style="color: white;">
+        <div class="col-lg-4">
+          <p class="p-2">All Copy rights Reserved with Fakify.</p>
+        </div>
+        <div class="col-lg-4">
+          <p class="p-2" style="text-align: end;" >Designed & Developed by Narendra Vanapalli</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        
+        document.querySelector(".appform").addEventListener('submit',(e)=>{
+          e.preventDefault();
+          document.querySelector(".blur-effect").style.display="block";
+          document.querySelector(".payment-hover").style.display="flex";
+        })
+
+        document.querySelector(".done").addEventListener("click",()=>{
+          document.querySelector(".blur-effect").style.display="none";
+          document.querySelector(".payment-hover").style.display="none";
+          alert("Registered Succesfully , Verify your certificates.");
+          window.location.href="./applycolleges.html";
+        })
+
+    </script>
+    <!-- <script src="./JavaScript/script1.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

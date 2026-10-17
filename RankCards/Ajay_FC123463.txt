@@ -1,0 +1,6 @@
+Name : Ajay
+MathsMark : 22
+PhysicsMark : 0
+ChemistryMark : 13
+TotalMark : 35
+Rank :9
